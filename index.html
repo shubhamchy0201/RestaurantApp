@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ZemosoRestaurant</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+        <link rel="stylesheet" href="style.css" />  
+    </head>
+    <body>
+    
+        <div class="all">
+            
+                <div id="tables">
+                    <h1 style="font-weight: bold;text-align: center;">Tables</h1>
+                    <input type="text" id="searchTable" onkeyup="searchTables()"   size="25" placeholder="Search table" /><br>
+                    
+                        <div id="table-names" style="width:100%;">
+
+                            <div class="card drop-table" id="tableBill-1" onclick="openPopUp(this)" style="width:100%;">
+                                <div class="card-body">
+                                <h3 class="card-title">Table-1</h3>
+                                <p class="card-text" >Rs: <span >0</span>   | Total Items:<span>0</span></p><br>
+                                </div>
+                            </div><br>
+
+                            <div class="card drop-table" id="tableBill-2" onclick="openPopUp(this)" style="width:100%;">
+                                <div class="card-body">
+                                <h3 class="card-title">Table-2</h3>
+                                <p class="card-text " >Rs: <span >0</span>   | Total Items:<span>0</span></p><br>
+                                </div>
+                            </div><br>
+
+                            <div class="card drop-table" id="tableBill-3" onclick="openPopUp(this)" style="width:100%;">
+                                <div class="card-body">
+                                <h3 class="card-title">Table-3</h3>
+                                <p class="card-text"  >Rs: <span >0</span>   | Total Items:<span>0</span></p><br>
+                                </div>
+                            </div><br>
+
+                            <div class="card drop-table" id="tableBill-4" onclick="openPopUp(this)" style="width:100%;">
+                                <div class="card-body">
+                                <h3 class="card-title">Table-4</h3>
+                                <p class="card-text" >Rs: <span >0</span>   | Total Items:<span>0</span></p><br>
+                                </div>
+                            </div><br>
+
+                        </div>
+                    
+                </div>
+
+                <div id= "menu" >
+                    <h1 style="font-weight: bold;text-align: center;">Menu</h1>
+                        <input type="text" id="searchItem"  onkeyup="searchItems()"   size="70" placeholder="Search menu...by course, by food" /><br>
+                        
+                        <div id="items"  style="width:100%;"> </div>
+               </div>
+
+
+
+<!-- pop up and bill -->
+
+            <div class="pop-up">
+                <div class="popup-content">
+                
+                    <div class="header">
+                        <h3>Table | Order-Details <span  onclick="closePopUp()" id= "close-btn">X</span> </h3>
+                        
+                    </div>
+                   
+                    <div class = "items-details">
+                        <div id="sno">
+                            
+                           
+                        </div>
+                        <div id="item-name">
+                            
+                            
+                        </div>
+                        <div id="item-price">
+                            
+                           
+                        </div>
+                        <div id="servings">
+                            
+                           
+                        </div>
+                        <div id = "delete-icon">
+                           
+                           
+                        </div>
+                       
+                        
+                    </div>
+
+                    <h6>Total Bill: </h6>
+                    <div id ="total-bill">
+                        
+                            
+                    </div>
+
+                    <div id ="close-session">
+                       
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            
+
+       </div>  <!--div end-->
+      
+
+
+       <script src='operation.js'></script>
+    </body>
+</html>
